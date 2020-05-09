@@ -114,7 +114,7 @@ pipeline {
         }
     }
       post {
-        always {jiraSendBuildInfo  branch: 'IBC-25', site: 'ibcprod.atlassian.net'}
+        always {jiraSendBuildInfo  branch: 'IBC-25', site: 'ibcstage.atlassian.net'}
         success {echo 'The job run was successful.'}
         failure {echo 'The job run was unsuccessful.'}
         unstable {echo 'The Job run but marked as unstable'}
